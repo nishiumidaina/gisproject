@@ -231,7 +231,7 @@
                                 console.log(data);
                                 })
                         });
-                        setTimeout(countup, 2000);
+                        setTimeout(countup, 5000);
                     }
                 countup();
                 </script>

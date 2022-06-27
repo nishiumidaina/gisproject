@@ -16,12 +16,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+    Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/create', 'HomeController@create')->name('create');
+    Route::post('/store', 'HomeController@store')->name('store');
+    Route::get('/edit/{id}', 'HomeController@edit')->name('edit');
+    Route::post('/update/{id}', 'HomeController@update')->name('update');
+    Route::post('/delete/{id}', 'HomeController@delete')->name('delete');
+    Route::post('/start/{id}', 'HomeController@start')->name('start');
+    Route::post('/stop/{id}', 'HomeController@stop')->name('stop');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/create', 'HomeController@create')->name('create');
-Route::post('/store', 'HomeController@store')->name('store');
-Route::get('/edit/{id}', 'HomeController@edit')->name('edit');
-Route::post('/update/{id}', 'HomeController@update')->name('update');
-Route::post('/delete/{id}', 'HomeController@delete')->name('delete');
-Route::post('/start/{id}', 'HomeController@start')->name('start');
-Route::post('/stop/{id}', 'HomeController@stop')->name('stop');
+});

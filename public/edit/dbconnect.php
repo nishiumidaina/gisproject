@@ -3,10 +3,10 @@ $id = $_POST['id'];
 
 // データベース接続
 
-$host = 'localhost';
-$dbname = 'gisproject';
-$dbuser = '0000';
-$dbpass = '0000';
+$host = 'us-cdbr-east-05.cleardb.net';
+$dbname = 'heroku_71b1fe37982044e';
+$dbuser = 'be8790c423c822';
+$dbpass = '87fc3e1f';
 
 try {
 $dbh = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8mb4", $dbuser,$dbpass, array(PDO::ATTR_EMULATE_PREPARES => false));

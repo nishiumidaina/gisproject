@@ -1,0 +1,51 @@
+# YOLOv5 requirements
+# Usage: pip install -r requirements.txt
+
+# Base ----------------------------------------
+matplotlib>=3.2.2
+numpy>=1.18.5
+opencv-python--headless>=4.1.1
+Pillow>=7.1.2
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1  # Google Colab version
+#torch>=1.7.0
+#torchvision>=0.8.1
+tqdm>=4.41.0
+protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+
+
+# Logging -------------------------------------
+#tensorboard>=2.4.1
+# wandb
+
+# Plotting ------------------------------------
+pandas>=1.1.4
+seaborn>=0.11.0
+
+# Export --------------------------------------
+# coremltools>=4.1  # CoreML export
+# onnx>=1.9.0  # ONNX export
+# onnx-simplifier>=0.3.6  # ONNX simplifier
+# scikit-learn==0.19.2  # CoreML quantization
+# tensorflow>=2.4.1  # TFLite export
+# tensorflowjs>=3.9.0  # TF.js export
+# openvino-dev  # OpenVINO export
+
+# Extras --------------------------------------
+ipython  # interactive notebook
+psutil  # system utilization
+thop  # FLOPs computation
+# albumentations>=1.0.3
+# pycocotools>=2.0  # COCO mAP
+# roboflow
+mysql-connector-python==8.0.29
+youtube-dl==2020.12.2
+pafy==0.5.5
+seaborn==0.11.2
+#-f https://download.pytorch.org/whl/torch_stable.html
+#torch==1.9.0+cpu
+torchaudio==0.11.0
+torchmetrics==0.8.2
+torchvision==0.12.0
+multidict==6.0.2
